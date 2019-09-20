@@ -1,0 +1,42 @@
+/*
+ Part 1
+ Use SCSS or CSS to make sure the chessboard looks as it should.
+ Feel free to search the internet for a reference. 
+ The required HTML structure is already in place. Do not modify it.
+ */
+ body {
+  display: flex;
+}
+.chessboard {
+  border: 5px solid black;
+  background: white;
+  padding: 1px;
+}
+.chessboard__row {
+  display: flex;
+}
+.chessboard__cell {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.chessboard__row:nth-child(even)
+.chessboard__cell:nth-child(odd){
+  background: black;
+}
+
+.chessboard__row:nth-child(odd)
+.chessboard__cell:nth-child(even){
+  background: black;
+}
+
+.chessman {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+}
